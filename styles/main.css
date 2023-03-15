@@ -1,0 +1,327 @@
+#visual_bg {
+    background: url(../images/bg1.png) center;
+    background-size: cover;
+    /* center, 화면 비율에 상관없이 중앙으로 맞추기 background-size:cover;까지. no repeat 안 써도 됨 */
+    background-attachment: fixed;
+    /* 스크롤을 움직일 때 배경 이미지를 고정하겠다는 뜻 */
+}
+#visual_bg #visual_bg_gra {background: linear-gradient(0deg, rgba(0,0,0,0.7), transparent 80%);}
+#visual_bg #visual_bg_gra .container {
+    width:1220px; margin: 0 auto; padding: 200px 0 400px; text-align: center; position:relative;
+}
+#visual_bg #visual_bg_gra .container .logo {width:50px; position: absolute; left:0; top:0;}
+#visual_bg #visual_bg_gra .container .logo a {}
+#visual_bg #visual_bg_gra .container .logo img {width:100%;}
+#visual_bg #visual_bg_gra .container .title {margin-bottom:50px;}
+#visual_bg #visual_bg_gra .container .title em {font-weight: 700;}
+#visual_bg #visual_bg_gra .container .title,
+#visual_bg #visual_bg_gra .container .title em {font-size: 5rem; letter-spacing: -0.02em; color: #fff; line-height: 1.4;}
+#visual_bg #visual_bg_gra .container .sponser {}
+#visual_bg #visual_bg_gra .container .sponser img {}
+#visual_bg #visual_bg_gra .container .question {
+    position:absolute; right: 0; bottom:250px;
+}
+#visual_bg #visual_bg_gra .container .question img {}
+/* 퀴즈 */
+#quiz_bg {
+    background: url(../images/quiz_bg.png) center;
+
+}
+#quiz_bg .container {
+    display: flex;
+    flex-flow: row nowrap;
+    width:1220px; margin: 0 auto;
+    padding: 50px 0;
+}
+#quiz_bg .container .left {width:50%;}
+#quiz_bg .container .left #quizFrm {}
+#quiz_bg .container .left #quizFrm fieldset {}
+#quiz_bg .container .left #quizFrm fieldset h1 {text-align: center; font-size: 3.5rem; font-weight: 600;}
+#quiz_bg .container .left #quizFrm fieldset h2 {font-size: 1.5rem;}
+#quiz_bg .container .left #quizFrm fieldset h1,
+#quiz_bg .container .left #quizFrm fieldset h2 {color:white; line-height: 1.5;}
+#quiz_bg .container .left #quizFrm fieldset ul {}
+#quiz_bg .container .left #quizFrm fieldset ul li {line-height: 2.5;}
+#quiz_bg .container .left #quizFrm fieldset ul li input[name=quiz] {}
+#quiz_bg .container .left #quizFrm fieldset ul li label {color:#fff; font-size: 1.4rem;}
+#quiz_bg .container .left #quizFrm fieldset p {text-align: center; margin: 20px;}
+#quiz_bg .container .left #quizFrm fieldset p .quiz_answer {border-radius: 20px; background: #000; color:#fff; padding:15px 0; width:100%;}
+#quiz_bg .container .right {width:50%;}
+#quiz_bg .container .right p {color:white; text-align: center;
+padding-top: 50px;}
+#quiz_bg .container .right p img {}
+/* 캠페인 통합 */
+.campaign_bg {
+    background-size: cover;
+}
+.campaign_bg .container {
+    width:1220px; margin: 0 auto;
+    padding: 100px 0;
+}
+.campaign_bg .container h1,
+.campaign_bg .container h1 * {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height:1.5;
+}
+/* 캠페인 2~7 배경모음 */
+.campaign1 {background: url(../images/video_bg.png);}
+.campaign2 {background: url(../images/50_bg.png);}
+.campaign3 {background: url(../images/bg3.png);}
+.campaign4 {background: url(../images/50_bg.png);}
+.campaign5 {background: url(../images/wwf.jpg);}
+.campaign6 {background: url(../images/50_bg.png);}
+.campaign7 {background: url(../images/bg2.png);}
+.campaign_bg {background-size: cover; background-position: center;}
+/* 캠페인 1~7 제목 근접 단락 통일 */
+.campaign_bg .container h1+p {
+    font-size: 1.6rem; letter-spacing: -0.02em;
+    line-height: 1.6;
+}
+/* 캠페인 em 단락 통일 */
+.campaign_bg .container h1 em {background: #fff; color: #2e3148;}
+/* 캠페인1 */
+.campaign1 {background: url(../images/video_bg.png);}
+.campaign1 .container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+
+}
+.campaign1 .container h1 {}
+.campaign1 .container iframe {margin: 30px 0;}
+.campaign1 .container .sponsor {}
+.campaign1 .container .sponsor img {}
+.campaign_bg {}
+/* 캠페인2 */
+.campaign2 {}
+.campaign_bg {}
+.campaign2 .container {
+    display:flex;
+    flex-flow: column wrap;
+    padding: 100px 100px 300px 100px;
+}
+.campaign2 .container h1 {}
+.campaign2 .container h1 em {}
+.campaign2 .container p {}
+.campaign2 .container h1,
+.campaign2 .container p {color: #fff; padding: 20px 0;}
+.campaign2 .container p img {width: 100%;}
+/* 캠페인3 */
+.campaign3 {}
+.campaign_bg {}
+.campaign3 .container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+.campaign3 .container h1 {
+    background: pink;
+    text-align: center;
+}
+.campaign3 .container h1+p {
+    background: yellow;
+    text-align: center; padding: 20px 0 50px;
+}
+.campaign3 .container ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: aqua;
+}
+.campaign3 .container ul li {
+    width:32%;
+    text-align: center; padding-top: 35px;
+
+    /* 마진 쓰면 박스 크기 달라짐 */
+}
+.campaign3 .container ul li:nth-child(1) {
+    background: url(../images/28.png) no-repeat;
+    background-position: center -150px;
+    background-size: cover;
+}
+.campaign3 .container ul li:nth-child(2) {
+    background: url(../images/27.png) no-repeat;
+    background-position: center -150px;
+    background-size: cover;
+}
+.campaign3 .container ul li:nth-child(3) {
+    background: url(../images/332.png) no-repeat;
+    background-position: center -150px;
+    background-size: cover;
+}
+.campaign3 .container ul li h2 {font-size: 3rem; font-weight: 600; color:#fff;}
+.campaign3 .container ul li p {padding: 20px 0; color:#fff; font-size: 1.5rem; font-weight: 600;}
+.campaign3 .container ul li p:nth-child(2) {padding: 25px 0 120px;}
+.campaign3 .container ul li p:last-child {
+    background: #fff; color:#000; font-size: 1rem;
+    margin-top: 100px;
+    line-height: 1.5;
+    padding: 20px;
+    height: 150px;
+    /* 글자가 달라도 글자 뒤의 배경을 맞춰서 일정하게 끝낼 수 있는 방법
+    1. 높이값을 주기
+    2. 말줄임표 주기 */
+}
+/* 캠페인 4 */
+.campaign4 {}
+.campaign_bg {}
+.campaign4 .container {
+    display:flex;
+    flex-flow: column wrap;
+    padding: 100px 100px 300px 100px;
+}
+.campaign4 .container h1 {}
+.campaign4 .container h1 em {}
+.campaign4 .container p {}
+.campaign4 .container h1,
+.campaign4 .container p {color: #fff; padding: 20px 0;}
+.campaign4 .container p img {width: 100%;}
+/* 캠페인 5 */
+.campaign5 {position: relative;}
+.campaign5::before { /* content:; display:; width:; height:; 꼭 넣어야 할 가상 요소 */ 
+    background: rgba(255,255,255,0.5); /* 그라디언트 안 써도 됨 */
+    position: absolute; content: ''; display:block; width: 100%; height: 100%;
+}
+.campaign5 .container {
+    text-align: center;
+    position: relative; /* 글씨 하얀 배경 위에 올려서 독자적으로 만들기 */
+    z-index:20;
+}
+.campaign5 .container h1 {}
+.campaign5 .container p {margin-top: 25px;}
+.campaign5 .container p:last-child {
+    font-size: 1.6rem; letter-spacing: -0.02em;
+    line-height: 1.6;
+}
+/* 캠페인6 */
+.campaign6 .container {text-align: end;}
+.campaign6 .container .title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.campaign6 .container .title h1 {color:#fff;}
+.campaign6 .container .title .sponsor {}
+.campaign6 .container .contents {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.campaign6 .container .contents li {
+    background: aqua;
+    width:32%; /* (100-4)/3 */
+    color: #fff;
+    text-align: center; font-size: 1.4rem;
+}
+/* 배경과 다르게 이미지는 겹치면 안 되므로 after를 쓰면 안 된다  */
+.campaign6 .container .contents li::before {
+    content:''; display:block;
+    background-size: cover; height:200px;
+}
+/* 통합으로 하면 위치 적용이 안 되므로 차라리 개별값으로 줘라 */
+.campaign6 .container .contents li:nth-child(1)::before {
+    background-image: url(../images/freebie1.jpg);
+    background-position: center 0;
+}
+.campaign6 .container .contents li:nth-child(2)::before {
+    background-image: url(../images/freebie2.jpg);
+}
+.campaign6 .container .contents li:nth-child(3)::before {
+    background-image: url(../images/freebie3.jpg);
+}
+.campaign6 .container p:last-child {
+    background-color: #fff; color: #2e3148; font-size: 1.5rem;
+    margin-top: 30px; display: inline-block;
+}
+/* 캠페인7 */
+.campaign7 {}
+.campaign7 .container {text-align: center;}
+.campaign7 .container h1 {}
+.campaign7 .container p {}
+.campaign7 .container a {}
+.campaign7 .container a img {margin-top: 50px;}
+/* footer */
+footer {
+    width:1220px; margin: 0 auto;
+    padding: 60px 0;
+}
+footer dl {}
+footer dl dt {font-weight: 700; font-size: 1.8rem;}
+footer dl dd {margin-top: 25px; font-size:1.2rem; font-weight: 600;}
+/* header {width:1220px; margin: 0 auto;}
+header a {}
+header a img {width:5%;}
+main {}
+main .main_1 {}
+main .main_1 img {position: absolute; display: block;}
+main .main_1 .box {}
+main .main_1 .comment {}
+main .main_1 .comment h1 {}
+main .main_1 .comment h1 span {}
+main .main_1 .comment a {}
+main .main_1 .comment a span {}
+main .main_1 .cmt {}
+main .main_1 .cmt a {}
+main .main_1 .cmt a span {} */
+/* #quiz_bg {
+    background: url(../images/quiz_bg.png) center;
+
+}
+#quiz_bg .container {
+    display: flex;
+    flex-flow: row nowrap;
+    width:1220px; margin: 0 auto;
+    padding: 100px 0;
+}
+#quiz_bg .container .left {width:50%;}
+#quiz_bg .container .left #quizFrm {}
+#quiz_bg .container .left #quizFrm fieldset {}
+#quiz_bg .container .left #quizFrm fieldset h1 {text-align: center; font-size: 3.5rem; font-weight: 600;}
+#quiz_bg .container .left #quizFrm fieldset h2 {font-size: 1.5rem;}
+#quiz_bg .container .left #quizFrm fieldset h1,
+#quiz_bg .container .left #quizFrm fieldset h2 {color:white; line-height: 1.5;}
+#quiz_bg .container .left #quizFrm fieldset ul {}
+#quiz_bg .container .left #quizFrm fieldset ul li {line-height: 2.5;}
+#quiz_bg .container .left #quizFrm fieldset ul li input[name=quiz] {}
+#quiz_bg .container .left #quizFrm fieldset ul li label {color:#fff; font-size: 1.4rem;}
+#quiz_bg .container .left #quizFrm fieldset p {text-align: center;}
+#quiz_bg .container .left #quizFrm fieldset p .quiz_answer {border-radius: 20px; background: #000; color:#fff; padding:15px 0; width:100%;}
+#quiz_bg .container .right {width:50%;}
+#quiz_bg .container .right p {color:white; text-align: center;}
+#quiz_bg .container .right p img {} */
+/* 캠페인2 선생님이 하신 거 */
+/* .campaign2 .container {}
+.campaign2 .container h1 {color: #fff;}
+.campaign2 .container h1+p {color: #fff; padding: 20px 0;}
+.campaign2 .container p:last-child {}
+.campaign2 .container p:last-child img {width: 100%;} */
+/* 캠페인6 내가 한 거 */
+/* .campaign6 {}
+.campaign6 .container {
+    display:flex;
+    flex-flow: column nowrap;
+}
+.campaign6 .container .t {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.campaign6 .container .t .left {}
+.campaign6 .container .t .left h1 {color:#fff;}
+.campaign6 .container .t .right {}
+.campaign6 .container .t .right a {}
+.campaign6 .container .t .right a img {}
+.campaign6 .container .btm {display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.campaign6 .container .btm p {width: 32%; text-align: center;}
+.campaign6 .container .btm p img {width: 100%; height: 270px; margin: 20px 0;}
+.campaign6 .container .btm p span {color:#fff; line-height: 1.6;}
+.campaign6 .container .add {
+    background: #fff; color:#2e3148; margin: 20px 0;} */
